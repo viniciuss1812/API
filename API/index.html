@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search API</title>
+</head>
+<body>
+    <input type="text" id="searchTerm" placeholder="Enter search term">
+    <button onclick="search()">Search</button>
+    <div id="exibir"></div>
+
+    <script>
+        function search() {
+            const searchTerm = document.getElementById('searchTerm').value.trim();
+            if (searchTerm === "") {
+                alert("Please enter a search term.");
+                return;
+            }
+
+            const urlapi = `http://www.omdbapi.com/?apikey=e772aba9&s=${encodeURIComponent(searchTerm)}`;
+            fetch(urlapi)
+                .then(response => response.json())
+                .then(result => {
+                    const dados = JSON.stringify(result);
+                    console.log(dados);
+                    document.getElementById('exibir').innerHTML = dados;
+                })
+                .catch(function (err) {
+                    console.error(err);
+                });
+        }
+    </script>
+</body>
+</html>
