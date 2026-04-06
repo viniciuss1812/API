@@ -1,0 +1,50 @@
+[
+  {
+    "id": 2,
+    "type": "BOLETO",
+    "description": "Pagamento de conta de luz",
+    "amount": 230.75
+  },
+  {
+    "id": 3,
+    "type": "CARTAO",
+    "description": "Compra no supermercado",
+    "amount": 89.9
+  },
+  {
+    "id": 5,
+    "type": "PIX",
+    "description": "Pagamento de amigo",
+    "amount": 45.0
+  },
+  {
+    "id": 6,
+    "type": "CARTAO",
+    "description": "Compra online",
+    "amount": 299.99
+  },
+  {
+    "id": 7,
+    "type": "BOLETO",
+    "description": "Pagamento de internet",
+    "amount": 120.0
+  },
+  {
+    "id": 8,
+    "type": "PIX",
+    "description": "Recebimento freelance",
+    "amount": 800.0
+  },
+  {
+    "id": 10,
+    "type": "CARTAO",
+    "description": "Restaurante",
+    "amount": 75.3
+  },
+  {
+    "id": 1,
+    "type": "a",
+    "description": "a",
+    "amount": 4444.0
+  }
+]
